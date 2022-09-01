@@ -1,0 +1,93 @@
+html
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.back-button
+{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 200px;
+    white-space: nowrap;
+    border:none;
+    background-color: rgb(243, 241, 241);
+    color: rgb(87, 87, 87);
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.back-button:hover
+{
+    border-style: solid;
+    border-color:rgb(87, 87, 87);
+    border-width: 1px;
+    padding: 9px;
+}
+
+.back-button:active
+{
+    background-color: lightgray;
+}
+
+.google-logo
+{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+}
+
+.advanced-form
+{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.advanced-form > div
+{
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advanced-form input
+{
+    width: 500px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+}
+
+#submit-button
+{
+    justify-content: end;
+}
+
+#submit-button button
+{
+    border-radius: 3px;
+    border: none;
+    padding: 8px 15px;
+    background-color: rgb(126, 126, 255);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+#submit-button button:hover
+{
+    opacity: 0.8;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    padding: 7px 14px;
+}
+
+#submit-button button:active
+{
+    opacity: 0.7;
+}

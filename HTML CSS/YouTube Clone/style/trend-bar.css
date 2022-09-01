@@ -1,0 +1,48 @@
+.trend-bar
+{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    left:75px;
+    top:55px;
+    right: 0px;
+    height: 60px;
+    background-color: white;
+    padding-left: 25px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #d1d1d1;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #d1d1d1;
+    z-index: 1000;
+}
+
+.trend-bar div
+{
+    background-color: #f9f9f9;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #d1d1d1;
+    font-size: 15px;
+    margin-right: 10px;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.trend-bar div:hover
+{
+    background-color: #ebebeb;
+}
+
+.trend-bar div:active
+{
+    background-color: black;
+    color: white;
+    border-color: black;
+}

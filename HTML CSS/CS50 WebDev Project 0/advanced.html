@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="style/advanced.css">
+    </head>
+    <body>
+        <a href="index.html">
+            <button class="back-button">
+                Back to Google Search >>
+            </button>
+        </a>
+            <img class="google-logo" src="images/Google_2015_logo.svg.png">
+            
+            <form class="advanced-form" action="https://www.google.com/search">
+            <h3>Find pages containing:</h3>
+            <div>
+                <label for="all-words">all of these words:</label>
+                <input id="all-words" type="text" name="as_q" onfocus="this.value=''">
+            </div>
+            <div>
+                <label for="exactly-word">exactly this word:</label>
+                <input id="exactly-word" type="text" name="as_epq" onfocus="this.value=''">
+            </div>
+            <div>
+                <label for="any-words">any of these words:</label>
+                <input id="any-words" type="text" name="as_oq" onfocus="this.value=''">
+            </div>
+            <div>
+                <label for="none-words">none of these words:</label>
+                <input id="none-words" type="text" name="as_eq" onfocus="this.value=''">
+            </div>
+            <div id="submit-button">
+               <button type="submit">Advanced Search</button>
+            </div>
+            </form>
+    </body>
+</html>

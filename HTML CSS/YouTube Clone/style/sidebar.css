@@ -1,0 +1,37 @@
+.sidebar
+{
+    position: fixed;
+    width: 75px;
+    top: 55px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white;
+}
+
+.sidebar div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75px;
+    height: 75px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.sidebar div:hover
+{
+    background-color: #ebebeb;
+}
+
+.sidebar div:active
+{
+    background-color: #d4d4d4;
+}
+
+.sidebar img
+{
+    width: 25px;
+    margin-bottom: 7px;
+}

@@ -1,0 +1,2 @@
+# Projekt statystyczny
+Projekt wykonany w czwartym semestrze nauki na Politechnice Śląskiej wspólnie z kolegami z roku. Realizowane zadanie zostało stworzone przez profesorów Politechniki Śląskiej i dotyczy analizy zawartości cukru w procentach, w dostawach buraków cukrowych w województwie lubuskim i wielkopolskim.

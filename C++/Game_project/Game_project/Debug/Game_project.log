@@ -1,0 +1,113 @@
+﻿  Enemies.cpp
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Enemies.cpp(15,18): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Enemies.cpp(16,47): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  Gra.cpp
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Gra.cpp(104,73): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Gra.cpp(104,48): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(143,72): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(142): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty *std::construct_at<_Ty,int&,int&,const char(&)[9],const char(&)[10],const char(&)[5],void>(_Ty *const ,int &,int &,const char (&)[9],const char (&)[10],const char (&)[5]) noexcept(<expr>)” funkcji szablon
+          with
+          [
+              _Ty=Menu
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\memory(2021): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Construct_in_place<_Ty,int&,int&,const char(&)[9],const char(&)[10],const char(&)[5]>(_Ty &,int &,int &,const char (&)[9],const char (&)[10],const char (&)[5]) noexcept(false)” funkcji szablon
+          with
+          [
+              _Ty=Menu
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\memory(2747): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<int&,int&,const char(&)[9],const char(&)[10],const char(&)[5]>(int &,int &,const char (&)[9],const char (&)[10],const char (&)[5])” funkcji szablon
+          with
+          [
+              _Ty=Menu
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\memory(2748): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<int&,int&,const char(&)[9],const char(&)[10],const char(&)[5]>(int &,int &,const char (&)[9],const char (&)[10],const char (&)[5])” funkcji szablon
+          with
+          [
+              _Ty=Menu
+          ]
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Gra.cpp(83): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::shared_ptr<Menu> std::make_shared<Menu,int&,int&,const char(&)[9],const char(&)[10],const char(&)[5]>(int &,int &,const char (&)[9],const char (&)[10],const char (&)[5])” funkcji szablon
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(158,77): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(143,72): warning C4244: "argument": konwersja z "_Ty" do "float", możliwa utrata danych
+          with
+          [
+              _Ty=size_t
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(142): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty *std::construct_at<_Ty,std::shared_ptr<sf::Texture>&,unsigned int,float,sf::Font&,void>(_Ty *const ,std::shared_ptr<sf::Texture> &,unsigned int &&,float &&,sf::Font &) noexcept(<expr>)” funkcji szablon
+          with
+          [
+              _Ty=Type1
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\memory(2021): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Construct_in_place<_Ty,std::shared_ptr<sf::Texture>&,unsigned int,float,sf::Font&>(_Ty &,std::shared_ptr<sf::Texture> &,unsigned int &&,float &&,sf::Font &) noexcept(false)” funkcji szablon
+          with
+          [
+              _Ty=Type1
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\memory(2747): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<sf::Texture>&,unsigned int,float,sf::Font&>(std::shared_ptr<sf::Texture> &,unsigned int &&,float &&,sf::Font &)” funkcji szablon
+          with
+          [
+              _Ty=Type1
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\memory(2748): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<sf::Texture>&,unsigned int,float,sf::Font&>(std::shared_ptr<sf::Texture> &,unsigned int &&,float &&,sf::Font &)” funkcji szablon
+          with
+          [
+              _Ty=Type1
+          ]
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Gra.cpp(553): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::shared_ptr<Type1> std::make_shared<Type1,std::shared_ptr<sf::Texture>&,T,float,sf::Font&>(std::shared_ptr<sf::Texture> &,T &&,float &&,sf::Font &)” funkcji szablon
+          with
+          [
+              T=unsigned int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(158,77): warning C4244: "argument": konwersja z "_Ty" do "float", możliwa utrata danych
+          with
+          [
+              _Ty=size_t
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(144,69): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(151): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty *std::construct_at<_Ty,int&,int&,const char(&)[9],const char(&)[10],const char(&)[5],void>(_Ty *const ,int &,int &,const char (&)[9],const char (&)[10],const char (&)[5]) noexcept(false)” funkcji szablon
+          with
+          [
+              _Ty=Menu
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\memory(2021): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Construct_in_place<_Ty,int&,int&,const char(&)[9],const char(&)[10],const char(&)[5]>(_Ty &,int &,int &,const char (&)[9],const char (&)[10],const char (&)[5]) noexcept(false)” funkcji szablon
+          with
+          [
+              _Ty=Menu
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(144,69): warning C4244: "argument": konwersja z "_Ty" do "float", możliwa utrata danych
+          with
+          [
+              _Ty=size_t
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\xutility(151): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „_Ty *std::construct_at<_Ty,std::shared_ptr<sf::Texture>&,unsigned int,float,sf::Font&,void>(_Ty *const ,std::shared_ptr<sf::Texture> &,unsigned int &&,float &&,sf::Font &) noexcept(false)” funkcji szablon
+          with
+          [
+              _Ty=Type1
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\memory(2021): message : zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Construct_in_place<_Ty,std::shared_ptr<sf::Texture>&,unsigned int,float,sf::Font&>(_Ty &,std::shared_ptr<sf::Texture> &,unsigned int &&,float &&,sf::Font &) noexcept(false)” funkcji szablon
+          with
+          [
+              _Ty=Type1
+          ]
+  Gracz.cpp
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Gracz.cpp(52,13): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Gracz.cpp(57,43): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Gracz.cpp(79,42): warning C4244: "argument": konwersja z "double" do "int", możliwa utrata danych
+  HealthBar.cpp
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\HealthBar.cpp(29,55): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+  main.cpp
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\main.cpp(8,12): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+  PauseMenu.cpp
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\PauseMenu.cpp(78,25): warning C4018: ">": niezgodność typu ze znakiem/bez znaku
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\PauseMenu.cpp(92,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  Pocisk.cpp
+  Ranking.cpp
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Ranking.cpp(36,9): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Ranking.cpp(58,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Ranking.cpp(76,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Daniel\Desktop\GIT\test\Game_project\Game_project\Ranking.cpp(90,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  Generowanie kodu...
+  Game_project.vcxproj -> C:\Users\Daniel\Desktop\GIT\test\Game_project\Debug\Game_project.exe
