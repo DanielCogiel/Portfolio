@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <style>
+            body
+            {
+                font-size: 100px;
+                text-align: center;
+            }
+            input
+            {
+                padding: 10px;
+            }
+            button
+            {
+                padding: 10px;
+                margin-left: 5px;
+            }
+            #answer {
+                border-radius: 30px;
+                border: none;
+                box-shadow: 0 0 4px rgb(176, 176, 176);
+                font-size: 20px;
+            }
+            #score {
+                margin-top: 30px;
+            }
+            #submit {
+                font-size: 20px;
+                border-radius: 30px;
+                border: none;
+                background-color:rgb(133, 149, 255);
+                color: white;
+                margin-left: 15px;
+                transition: opacity 0.5s;
+            }
+            #submit:hover {
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script type="text/babel">
+
+            const app = ReactDOM.createRoot(document.querySelector("#app"));
+
+            function App() {
+                const [state, setState] = React.useState({
+                    num1: Math.ceil(Math.random() * 10),
+                    num2: Math.ceil(Math.random() * 10),
+                    response: "",
+                    score: 9,
+                    runRestart: false
+                })
+
+                function updateResponse(event) {
+                    setState({
+                        ...state,
+                        response: event.target.value
+                    })
+                }
+
+                function checkAnswer() {
+                  if (state.response != "") {
+                    if (state.num1 + state.num2 === parseInt(state.response)) {
+                        setState({
+                            ...state,
+                            num1: Math.ceil(Math.random() * 10),
+                            num2: Math.ceil(Math.random() * 10),
+                            score: state.score + 1,
+                            response: ""
+                        });
+                        document.querySelector("#score").style.color = "green";
+                    }
+                    else  {
+                        let newScore = state.score - 1;
+                        if (newScore < 0) {
+                            newScore = 0;
+                        }
+                        setState({
+                            ...state,
+                            score: newScore,
+                            response: ""
+                        });
+                        document.querySelector("#score").style.color = "red";
+                    }
+                  }
+                  else {
+                    document.querySelector("#score").style.color = "black";
+                  }
+                }
+
+                function startOver(event) {
+                   setState({
+                    num1: Math.ceil(Math.random() * 10),
+                    num2: Math.ceil(Math.random() * 10),
+                    response: "",
+                    score: 0,
+                    runRestart: true
+                   })
+                }
+
+                if (state.runRestart) {
+                    setState({
+                        ...state, 
+                        runRestart: false
+                    })
+                    return (
+                        <div>
+                            <div>{state.num1} + {state.num2}</div> 
+                            <input onChange={updateResponse} value={state.response} type="text" id="answer" placeholder="Your Answer"/>
+                            <button onClick = {checkAnswer} id="submit">Submit</button>
+                            <div id="score">{state.score}</div>
+                        </div>
+                    );
+                }
+
+                if (state.score === 10)
+                {
+                    return (
+                        <div>
+                            <div>You Won!</div>
+                            <button onClick={startOver} id="submit">Start Over</button>
+                        </div>
+                    );
+                }
+
+                return (
+                    <div>
+                        <div>{state.num1} + {state.num2}</div> 
+                        <input onChange={updateResponse} value={state.response} type="text" id="answer" placeholder="Your Answer"/>
+                        <button onClick = {checkAnswer} id="submit">Submit</button>
+                        <div id="score">{state.score}</div>
+                    </div>
+                );
+
+                
+            }
+
+            app.render(<App />);
+
+        </script>
+    </body>
+</html>
