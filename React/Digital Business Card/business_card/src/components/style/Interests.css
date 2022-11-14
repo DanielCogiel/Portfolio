@@ -1,0 +1,15 @@
+.interests--header {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.interests--body {
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .interests--header {
+        font-size: 35px;
+    }
+}

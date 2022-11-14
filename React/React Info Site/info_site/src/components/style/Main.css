@@ -1,0 +1,20 @@
+.main {
+    position: relative;
+    color: white;
+    padding: 50px;
+    font-size: 25px;
+    background-image: url(../../images/react-logo-white.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
+.main > ul > li {
+    margin: 15px;
+}
+
+.main > ul > li::marker {
+    color: aqua;
+    font-size: 2.5rem;
+}
+

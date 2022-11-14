@@ -1,0 +1,15 @@
+.about--header {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.about--body {
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .about--header {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,22 @@
+body {
+    margin: 0 20%;
+    background: rgb(46, 46, 46);
+    font-family: "Sono", sans-serif;
+    color: white;
+}
+
+p {
+    margin: 0;
+}
+
+@media (max-width: 860px) {
+    body {
+        margin: 0 10%;
+    }
+}
+@media (max-width: 650px) {
+    body {
+        margin: 0;
+    }
+}
+
