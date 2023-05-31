@@ -1,0 +1,6 @@
+node_modules
+uploads
+*.session.sql
+dist/*
+!dist/
+.env

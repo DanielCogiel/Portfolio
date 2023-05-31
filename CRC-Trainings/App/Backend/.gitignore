@@ -1,0 +1,25 @@
+# npm
+node_modules
+package-lock.json
+*.log
+*.gz
+
+.vscode
+TRAININGS DATABASE.session.sql
+/uploads
+.env
+database.json
+
+# Ignore all files in dist folder (but not folder itself)
+dist/*
+!dist/.gitkeep
+
+# Coveralls
+.nyc_output
+coverage
+
+# Benchmarking
+benchmarks/graphs
+
+# ignore additional files using core.excludesFile
+# https://git-scm.com/docs/gitignore

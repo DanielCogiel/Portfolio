@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: solid 5px #8482FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#header-left {
+    display: flex;
+    align-items: center;
+}
+
+#header-left img {
+    width: 120px;
+    height: 120px;
+}
+
+#header-left h1 {
+    font-size: 40px;
+}
+
+.trainings-button {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color: #8482FF;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+    padding: 10px 30px;
+    border: 5px solid #8482FF;
+    cursor: pointer;
+    position: relative;
+}
+
+.trainings-button .notification-number {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    color: #6D6AFF;
+    background-color: white;
+    border: solid 5px #6D6AFF;
+    border-radius: 50%;
+    padding: 5px 7px;
+}
+
+.trainings-button.selected {
+    color: #8482FF;
+    background-color: white;
+}
+
+.trainings-button.selected:hover {
+    color: white;
+    background-color: #8482FF;
+}
+
+.trainings-button:hover {
+    background-color: white;
+    color: #8482FF;
+    transition: background-color 0.5s;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card .training-image {
+    background-color: #8482FF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    border: 5px solid #8482FF;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card .training-image img {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card .training-image button {
+    border: 5px solid #8482FF;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #8482FF;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.card .training-image button:hover {
+    background-color: #8482FF;
+    color: white;
+    border-color: white;
+}
+
+.card .training-content {
+    border-right: solid 5px #8482FF;
+    border-bottom: solid 5px #8482FF;
+    border-top: solid 5px #8482FF;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+}
+
+.card .training-content .coursename-wrapper {
+    display: flex;
+    justify-content: right;
+}
+
+.card .training-content .coursename-wrapper h1 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    width: 75%;
+    background-color: #8482FF;
+    color: white;
+    border: 5px solid #8482FF;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: -4px;
+    margin-right: -5px;
+}
+
+.card .training-content .training-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    row-gap: 30px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card .training-content .training-content-grid .training-content-item {
+    display: flex;
+    align-items: center;
+}
+
+.card .training-content .training-content-grid .training-content-item img {
+    height: 22px;
+    width: 22px;
+    margin: 0px;
+}
+
+.card .training-content .training-content-grid .training-content-item span {
+    margin-left: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+@media(max-width: 900px) {
+    #container {
+        grid-template-columns: 1fr;
+    }
+}

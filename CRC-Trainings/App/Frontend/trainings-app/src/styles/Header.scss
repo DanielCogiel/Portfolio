@@ -1,0 +1,38 @@
+#header {
+    background-color: #ffffff;
+    border-bottom: solid 5px #8482FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    &.alternative {
+        background-color: #6D6AFF;
+        border-bottom-color: white;
+
+        h1 {
+            color: white;
+            font-weight: 900;
+        }
+    }
+
+    #header-left {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 120px;
+            height: 120px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    #header-right {
+        display: flex;
+        align-items: center;
+    }
+}
+

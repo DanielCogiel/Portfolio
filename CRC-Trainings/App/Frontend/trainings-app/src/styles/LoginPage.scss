@@ -1,0 +1,32 @@
+$font-size: 30px;
+
+.section-header {
+    color: white;
+    background-color: #6D6AFF;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.login-form {
+    font-size: $font-size;
+    color: white;
+    background-color: #8482FF;
+
+    button {
+        font-size: $font-size;
+        background-color: #6D6AFF;
+        border: none;
+        margin-top: 10px;
+        border: solid 5px #8482FF;
+        border-radius: 15px;
+    }
+
+    input {
+        font-size: $font-size;
+        border: solid 8px #6D6AFF;
+    }
+}

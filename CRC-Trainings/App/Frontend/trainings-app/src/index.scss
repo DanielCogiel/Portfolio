@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.body-with-image {
+  background-image: url('./resources/images/background.jpg');
+  background-size: cover;
+  margin: 0;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.trainings-button {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: #8482FF;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+  padding: 10px 30px;
+  border: 5px solid #8482FF;
+  cursor: pointer;
+  position: relative;
+
+  .notification-number {
+    position: absolute;
+    right: -20px;
+    top: -25px;
+    color: #6D6AFF;
+    background-color: white;
+    border: solid 5px #6D6AFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  &.alternative {
+    color: #6D6AFF;
+    background-color: white;
+    border-color: white;
+
+    &.selected {
+      color: white;
+      background-color: #6D6AFF;
+
+      &:hover {
+        color: #6D6AFF;
+        background-color: white;
+        border-color: white;
+      }
+    }
+
+    &:hover {
+      color:white;
+      background-color: #6D6AFF;
+    }
+  }
+
+  &.selected {
+    color: #8482FF;
+    background-color: white;
+
+    &:hover {
+      color: white;
+      background-color: #8482FF;
+    }
+  }
+
+  &:hover {
+    background-color: white;
+    color: #8482FF;
+    transition: background-color 0.5s;
+  }
+}

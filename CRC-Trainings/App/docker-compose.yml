@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  express:
+    build: ./Backend
+    ports: 
+      - "4000:4000"
+    env_file: ./Backend/.env
+  react:
+    build: 
+      context: ./Frontend/trainings-app
+      args:
+        REACT_APP_API_URL: http://localhost:4000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - express
